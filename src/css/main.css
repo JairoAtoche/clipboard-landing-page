@@ -1,0 +1,54 @@
+:root {
+  /* Primary colors */
+  --primary-strong: hsl(171deg, 66%, 44%);
+  --primary-light: hsl(233deg, 100%, 69%);
+  /* Neutral colors */
+  --neutral-dark: hsl(210deg, 10%, 33%);
+  --neutral-normal: hsl(201deg, 11%, 66%);
+  /* Font weight */
+  --regular: 400;
+  --semibold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: initial;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18x;
+}
+
+.background-container {
+  width: 100%;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .background-container {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+}
+
+.logo {
+  margin-top: 122px;
+}
+.logo__img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

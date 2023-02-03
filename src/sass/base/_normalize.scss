@@ -1,0 +1,29 @@
+@use  '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+:root {
+    /* Primary colors */
+    --primary-strong: #{map-get(variables.$colors, 'strong-cyan')};
+    --primary-light: #{map-get(variables.$colors, 'light-blue')};
+    /* Neutral colors */
+    --neutral-dark: #{map-get(variables.$colors, 'dark-grayish-blue')};
+    --neutral-normal: #{map-get(variables.$colors, 'grayish-blue')};
+    
+    /* Font weight */
+    --regular: #{map-get(variables.$weight, 'regular')};
+    --semibold: #{map-get(variables.$weight, 'semibold')};
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+    @include mixins.caja-flex(column,start,center);
+        
+    font-family: variables.$font;
+    font-size: 18x;
+}

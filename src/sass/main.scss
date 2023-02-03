@@ -1,0 +1,27 @@
+@use 'base/normalize';
+
+@use 'utilities/variables';
+@use 'utilities/mixins' as mixins;
+
+.background-container{
+  width: 100%;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;  
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mixins.desktop {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+}
+
+.logo {
+  margin-top: 122px;
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
