@@ -9,21 +9,28 @@
 .customers {
   &__img {
     &-container {
-      max-width: 100%;
       object-fit: cover;
+      &:first-child {
+        width: 139px;
+      }
       &:nth-child(2) {
         margin-top: 66px;
+        width: 117px;
       }
       &:nth-child(3) {
         margin-top: 69px;
+        width: 134px;
       }
       &:nth-child(4) {
         margin-top: 63px;
+        width: 113px;
       }
       &:last-child {
         margin-top: 56px;
+        width: 105px;
       }
     }
     display: block;
+    max-width: 100%;
   }
 }

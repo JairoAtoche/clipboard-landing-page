@@ -3,10 +3,12 @@
 @use 'utilities/variables';
 @use 'utilities/mixins';
 
+@use 'components/button';
+
 @use 'components/hero';
 @use 'components/track';
 @use 'components/clipboard';
 @use 'components/tools';
 @use 'components/customers';
 @use 'components/available';
-@use 'components/button';
+@use 'layout/footer';
