@@ -140,6 +140,37 @@ p {
   object-fit: cover;
 }
 
+.main__tools {
+  padding: 0 32px;
+}
+
+.tools__h2 {
+  margin-top: 97px;
+}
+.tools__p {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+.tools__container {
+  margin-top: 34px;
+}
+.tools__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tools__h3 {
+  margin-top: 45px;
+}
+.tools__img {
+  display: block;
+}
+.tools__img-container {
+  margin-top: 59px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .download {
   width: 312px;
   height: 56px;
