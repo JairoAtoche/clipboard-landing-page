@@ -1,13 +1,12 @@
+@use '../utilities/mixins' as mixins;
+
 .main__track {
   margin: 0 32px;
 }
 
 .track {
-  &__container {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  &__container {
+    @include mixins.caja-flex(column,center,center);
   }
   &__h3:first-child {
     margin-top: 57px;

@@ -1,10 +1,10 @@
+@use '../utilities/mixins' as mixins;
+
 .footer {
   margin-top: 170px;
   background-color: #F5F6F8;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include mixins.caja-flex(column,initial,center);
 
   &__img {
     &-container {
@@ -28,13 +28,11 @@
 .network {
   margin-top: 51px;
   margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  @include mixins.caja-flex(column,center,center, 40px);
   &__img {
     max-width: 100%;
     object-fit: cover;
     display: block;
+    cursor: pointer;
   }
 }

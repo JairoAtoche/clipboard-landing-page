@@ -1,14 +1,12 @@
+@use '../utilities/mixins' as mixins;
+
 .main__available {
   padding: 0 32px;
   margin-top: 172px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include mixins.caja-flex(column,initial,center);
 }
 
 .available {
-  &__h2 {
-  }
   &__p {
     margin-top: 20px;
   }

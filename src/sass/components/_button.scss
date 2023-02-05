@@ -1,3 +1,5 @@
+@use '../utilities/mixins' as mixins;
+
 .download {
   width: 312px;
   height: 56px;
@@ -9,8 +11,7 @@
   cursor: pointer;
 
   &-container {
-    display: flex;
-    flex-direction: column;
+    @include mixins.caja-flex(column,initial,initial);
     margin-top: 51px;
   }
   &--ios {

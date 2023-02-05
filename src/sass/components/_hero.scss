@@ -7,11 +7,8 @@
     width: 100%;
     background-image: url(../images/bg-header-mobile.png);
     background-repeat: no-repeat;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-size: contain;
+    @include mixins.caja-flex(column,center,center);
     @include mixins.desktop {
       background-image: url(../images/bg-header-desktop.png);
     }
