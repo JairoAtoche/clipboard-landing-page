@@ -199,6 +199,22 @@ p {
   margin-top: 56px;
 }
 
+.main__available {
+  padding: 0 32px;
+  margin-top: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.available__h2 {
+  padding: 0 20px;
+}
+.available__p {
+  margin-top: 20px;
+  padding: 0 18px;
+}
+
 .download {
   width: 312px;
   height: 56px;
