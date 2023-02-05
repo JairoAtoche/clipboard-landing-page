@@ -20,10 +20,13 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     min-height: 100vh;
     @include mixins.caja-flex(column,start,center);
         
     font-family: variables.$font;
-    font-size: 18x;
+    font-size: 18px;
+}
+button {
+    font-family: variables.$font;
 }

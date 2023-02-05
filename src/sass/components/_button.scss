@@ -1,0 +1,25 @@
+.download {
+  width: 312px;
+  height: 56px;
+  border: 0px;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+  }
+  &--ios {
+    background-color: var(--primary-strong);
+    box-shadow: 1px 1px 10px var(--primary-strong);
+  }
+  &--mac {
+    background-color: var(--primary-light);
+    box-shadow: 1px 1px 10px var(--primary-light);
+    margin-top: 24px;
+  }
+}

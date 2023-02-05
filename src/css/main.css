@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +24,19 @@
   align-items: center;
   gap: initial;
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 18x;
+  font-size: 18px;
 }
 
-.background-container {
+button {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.main__hero {
+  text-align: center;
+}
+
+.hero__background {
+  padding: 0 32px;
   width: 100%;
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -38,17 +47,53 @@
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .background-container {
+  .hero__background {
     background-image: url(../images/bg-header-desktop.png);
   }
 }
-
-.logo {
+.hero__logo {
   margin-top: 122px;
 }
-.logo__img {
+.hero__logo__img {
   max-width: 100%;
   object-fit: cover;
+}
+.hero__h1 {
+  margin-top: 65px;
+  font-size: 31px;
+  font-weight: 600;
+  color: var(--neutral-dark);
+}
+.hero__p {
+  margin-top: 20px;
+  font-size: 16.3px;
+  color: var(--neutral-normal);
+  line-height: 24px;
+}
+
+.download {
+  width: 312px;
+  height: 56px;
+  border: 0px;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.download-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 51px;
+}
+.download--ios {
+  background-color: var(--primary-strong);
+  box-shadow: 1px 1px 10px var(--primary-strong);
+}
+.download--mac {
+  background-color: var(--primary-light);
+  box-shadow: 1px 1px 10px var(--primary-light);
+  margin-top: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
