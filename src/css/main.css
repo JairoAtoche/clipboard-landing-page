@@ -62,6 +62,10 @@ p {
   font-weight: 400;
   color: white;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.download:hover {
+  opacity: 0.8;
 }
 .download-container {
   display: flex;
@@ -286,21 +290,33 @@ p {
 .footer__item {
   margin-top: 27px;
 }
+.footer__item__a {
+  text-decoration: none;
+  color: var(--neutral-dark);
+  transition-duration: 0.5s;
+}
+.footer__item__a:hover {
+  color: var(--primary-strong);
+}
 
 .network {
   margin-top: 51px;
   margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-.network__img {
+.network__svg {
   max-width: 100%;
   object-fit: cover;
   display: block;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.network__svg:hover {
+  fill: var(--primary-strong);
 }
 
 /*# sourceMappingURL=main.css.map */

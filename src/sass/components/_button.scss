@@ -9,6 +9,10 @@
   font-weight: 400;
   color: white;
   cursor: pointer;
+  transition: .5s ease;
+  &:hover {
+    opacity: .8;
+  }
 
   &-container {
     @include mixins.caja-flex(column,initial,initial);

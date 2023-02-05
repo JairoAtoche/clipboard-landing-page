@@ -22,17 +22,29 @@
   }
   &__item {
     margin-top: 27px;
+    &__a {
+      text-decoration: none;
+      color: var(--neutral-dark);
+      transition-duration: .5s;
+      &:hover {
+        color: var(--primary-strong);
+      }
+    }
   }
 }
 
 .network {
   margin-top: 51px;
   margin-bottom: 50px;
-  @include mixins.caja-flex(column,center,center, 40px);
-  &__img {
+  @include mixins.caja-flex(row,center,center, 40px);
+  &__svg {
     max-width: 100%;
     object-fit: cover;
     display: block;
     cursor: pointer;
+    transition: .5s ease;
+    &:hover {
+      fill: var(--primary-strong);
+    }
   }
 }
