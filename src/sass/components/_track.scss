@@ -1,0 +1,32 @@
+.main__track {
+  padding: 0 32px;
+}
+
+.track {
+  &__h3:first-child {
+    margin-top: 57px;
+  }
+  &__h3 {
+    margin-top: 51px;
+  }
+  &__h3 ~ &__p {
+    margin-top: 14px;
+  }
+  &__h2 {
+    margin-top: 161px;
+  }
+  &__p {
+    margin-top: 21px;    
+  }
+
+  &__img {
+    &-container {
+      margin-top: 68px;
+      width: 311px;      
+    }
+
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

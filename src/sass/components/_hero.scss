@@ -1,9 +1,5 @@
 @use '../utilities/mixins' as mixins;
 
-.main__hero {
-  text-align: center;
-}
-
 .hero {
   &__background {
     padding: 0 32px;
@@ -26,6 +22,7 @@
     &__img {
       max-width: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 
@@ -37,8 +34,5 @@
   }
   &__p {
     margin-top: 20px;
-    font-size: 16.3px;
-    color: var(--neutral-normal);
-    line-height: 24px;
   }
 }

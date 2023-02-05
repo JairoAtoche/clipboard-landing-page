@@ -27,6 +27,24 @@ body {
     font-family: variables.$font;
     font-size: 18px;
 }
+
 button {
     font-family: variables.$font;
+}
+
+h2 {
+    font-size: 27px;
+    color: var(--neutral-dark);
+    font-weight: 600;
+}
+
+p {
+    font-size: 16.3px;
+    font-weight: 400;
+    color: var(--neutral-normal);
+    line-height: 24px;
+}
+
+.main {
+    text-align: center;
 }
