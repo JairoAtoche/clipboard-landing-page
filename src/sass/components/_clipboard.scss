@@ -1,0 +1,22 @@
+.main__clipboard {
+  padding: 0 32px;  
+}
+
+.clipboard {
+  &__h2 {
+    margin-top: 190px;
+  }
+  &__p {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  &__img {
+    &-container {
+      margin-top: 63px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    display: block;
+    width: 346px;
+  }
+}
