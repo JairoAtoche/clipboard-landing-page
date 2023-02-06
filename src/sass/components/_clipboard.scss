@@ -8,18 +8,30 @@
 .clipboard {
   &__h2 {
     margin-top: 190px;
+    @include mixins.desktop {
+      margin-top: 150px;
+    }
   }
   &__p {
     margin-top: 20px;
     padding: 0 20px;
+    @include mixins.desktop {
+      margin-top: 24px;
+      padding: 0 300px;
+      font-size: 18.3px;
+    }
   }
   &__img {
     &-container {
       margin-top: 63px;
-      max-width: 100%;
       object-fit: cover;
+      width: 346px;
+      @include mixins.desktop {
+        margin-top: 103px;
+        width: 905px;
+      }
     }
     display: block;
-    width: 346px;
+    max-width: 100%;
   }
 }

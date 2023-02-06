@@ -42,6 +42,7 @@
   }
   &__p {
     margin-top: 20px;
+    line-height: 26px;
     @include mixins.desktop {
       margin-top: 18px;
     }

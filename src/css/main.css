@@ -167,6 +167,7 @@ p {
 }
 .hero__p {
   margin-top: 20px;
+  line-height: 26px;
 }
 @media screen and (min-width: 620px) {
   .hero__p {
@@ -267,6 +268,7 @@ p {
   .track__img-container {
     width: 752px;
     margin-top: 85px;
+    margin-left: -32px;
   }
 }
 .track__functionalities {
@@ -289,18 +291,36 @@ p {
 .clipboard__h2 {
   margin-top: 190px;
 }
+@media screen and (min-width: 620px) {
+  .clipboard__h2 {
+    margin-top: 150px;
+  }
+}
 .clipboard__p {
   margin-top: 20px;
   padding: 0 20px;
 }
+@media screen and (min-width: 620px) {
+  .clipboard__p {
+    margin-top: 24px;
+    padding: 0 300px;
+    font-size: 18.3px;
+  }
+}
 .clipboard__img {
   display: block;
-  width: 346px;
+  max-width: 100%;
 }
 .clipboard__img-container {
   margin-top: 63px;
-  max-width: 100%;
   object-fit: cover;
+  width: 346px;
+}
+@media screen and (min-width: 620px) {
+  .clipboard__img-container {
+    margin-top: 103px;
+    width: 905px;
+  }
 }
 
 .main__tools {
@@ -310,11 +330,33 @@ p {
 .tools__h2 {
   margin-top: 97px;
 }
+@media screen and (min-width: 620px) {
+  .tools__h2 {
+    margin-top: 71px;
+  }
+}
 .tools__p {
   margin-top: 15px;
 }
+@media screen and (min-width: 620px) {
+  .tools__p {
+    margin-top: 24px;
+    font-size: 18.3px;
+  }
+}
 .tools__container {
   margin-top: 34px;
+}
+@media screen and (min-width: 620px) {
+  .tools__container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
 }
 .tools__content {
   display: flex;
@@ -323,8 +365,21 @@ p {
   align-items: center;
   gap: initial;
 }
+@media screen and (min-width: 620px) {
+  .tools__content {
+    width: 400px;
+  }
+}
 .tools__h3 {
   margin-top: 45px;
+}
+@media screen and (min-width: 620px) {
+  .tools__h3 {
+    margin-top: 41px;
+  }
+}
+.tools__h3 ~ .tools__p {
+  margin-top: 21px;
 }
 .tools__img {
   display: block;
@@ -333,6 +388,11 @@ p {
   margin-top: 59px;
   max-width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 620px) {
+  .tools__img-container {
+    margin-top: 0;
+  }
 }
 
 .main__customers {

@@ -64,6 +64,7 @@
       @include mixins.desktop {
         width: 752px;
         margin-top: 85px;
+        margin-left: -32px;
       } 
     }
     max-width: 100%;

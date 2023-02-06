@@ -7,24 +7,48 @@
 .tools {
   &__h2 {
     margin-top: 97px;
+    @include mixins.desktop {
+      margin-top: 71px;
+    }
   }
   &__p {
     margin-top: 15px;
+    @include mixins.desktop {
+      margin-top: 24px;
+      font-size: 18.3px;
+    }
   }
   &__container {
     margin-top: 34px;
+    @include mixins.desktop {      
+      margin-top: 75px;
+      @include mixins.caja-flex(row,center,center, 40px);
+      width: 100%
+    }
   }
   &__content {
     @include mixins.caja-flex(column,initial,center);
+    @include mixins.desktop {
+      width: 400px;
+    }
   }
   &__h3 {
     margin-top: 45px;
+    @include mixins.desktop {
+      margin-top: 41px;
+    }
+  }
+  &__h3 ~ &__p {
+    margin-top: 21px;
   }
   &__img {
     &-container {
       margin-top: 59px;
       max-width: 100%;
       object-fit: cover;
+      @include mixins.desktop {
+        margin-top: 0;
+      }
     }
     display: block;
   }
