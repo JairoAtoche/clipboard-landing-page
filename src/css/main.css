@@ -45,12 +45,22 @@ h2 {
   color: var(--neutral-dark);
   font-weight: 600;
 }
+@media screen and (min-width: 620px) {
+  h2 {
+    font-size: 35px;
+  }
+}
 
 p {
   font-size: 16.3px;
   font-weight: 400;
   color: var(--neutral-normal);
   line-height: 24px;
+}
+@media screen and (min-width: 620px) {
+  p {
+    font-size: 20.3px;
+  }
 }
 
 .download {
@@ -67,6 +77,12 @@ p {
 .download:hover {
   opacity: 0.8;
 }
+@media screen and (min-width: 620px) {
+  .download {
+    width: 226px;
+    height: 54px;
+  }
+}
 .download-container {
   display: flex;
   flex-direction: column;
@@ -74,6 +90,15 @@ p {
   align-items: initial;
   gap: initial;
   margin-top: 51px;
+}
+@media screen and (min-width: 620px) {
+  .download-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
 }
 .download--ios {
   background-color: var(--primary-strong);
@@ -84,12 +109,21 @@ p {
   box-shadow: 1px 1px 10px var(--primary-light);
   margin-top: 24px;
 }
+@media screen and (min-width: 620px) {
+  .download--mac {
+    margin-top: 0;
+  }
+}
+
+.main__hero {
+  width: 100%;
+}
 
 .hero {
   margin: 0 32px;
 }
 .hero__background {
-  padding: 0 32px;
+  padding: 0 31px;
   width: 100%;
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -100,9 +134,10 @@ p {
   align-items: center;
   gap: initial;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
   .hero__background {
     background-image: url(../images/bg-header-desktop.png);
+    padding: 0 350px;
   }
 }
 .hero__img {
@@ -113,18 +148,41 @@ p {
 .hero__img-container {
   margin-top: 122px;
 }
+@media screen and (min-width: 620px) {
+  .hero__img-container {
+    margin-top: 131px;
+  }
+}
 .hero__h1 {
   margin-top: 65px;
   font-size: 31px;
   font-weight: 600;
   color: var(--neutral-dark);
 }
+@media screen and (min-width: 620px) {
+  .hero__h1 {
+    margin-top: 57px;
+    font-size: 44.5px;
+  }
+}
 .hero__p {
   margin-top: 20px;
+}
+@media screen and (min-width: 620px) {
+  .hero__p {
+    margin-top: 18px;
+  }
 }
 
 .main__track {
   margin: 0 32px;
+}
+@media screen and (min-width: 620px) {
+  .main__track {
+    margin: 0;
+    align-self: flex-start;
+    width: 100%;
+  }
 }
 
 .track__container {
@@ -134,20 +192,66 @@ p {
   align-items: center;
   gap: initial;
 }
+@media screen and (min-width: 620px) {
+  .track__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 110px;
+  }
+}
 .track__h3:first-child {
   margin-top: 57px;
 }
+@media screen and (min-width: 620px) {
+  .track__h3:first-child {
+    margin-top: 153px;
+  }
+}
 .track__h3 {
   margin-top: 51px;
+  font-size: 23px;
+}
+@media screen and (min-width: 620px) {
+  .track__h3 {
+    margin-top: 62px;
+  }
 }
 .track__h3 ~ .track__p {
   margin-top: 14px;
 }
+@media screen and (min-width: 620px) {
+  .track__h3 ~ .track__p {
+    width: 340px;
+    font-size: 16.3px;
+    margin-top: 13px;
+  }
+}
 .track__h2 {
   margin-top: 161px;
 }
+@media screen and (min-width: 620px) {
+  .track__h2 {
+    margin-top: 153px;
+  }
+}
 .track__p {
   margin-top: 21px;
+}
+@media screen and (min-width: 620px) {
+  .track__p {
+    margin-top: 24px;
+    font-size: 18.3px;
+    width: 695px;
+  }
+}
+.track__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
 }
 .track__img {
   max-width: 100%;
@@ -158,9 +262,27 @@ p {
   margin-top: 68px;
   width: 311px;
 }
+@media screen and (min-width: 620px) {
+  .track__img-container {
+    width: 752px;
+    margin-top: 85px;
+  }
+}
+.track__functionalities {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: initial;
+}
 
 .main__clipboard {
   margin: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  gap: initial;
 }
 
 .clipboard__h2 {

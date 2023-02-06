@@ -13,10 +13,16 @@
   &:hover {
     opacity: .8;
   }
-
+  @include mixins.desktop {
+    width: 226px;
+    height: 54px;
+  }
   &-container {
     @include mixins.caja-flex(column,initial,initial);
-    margin-top: 51px;
+    margin-top: 51px;    
+    @include mixins.desktop {
+      @include mixins.caja-flex(row,center,center, 16px);
+    }
   }
   &--ios {
     background-color: var(--primary-strong);
@@ -26,5 +32,8 @@
     background-color: var(--primary-light);
     box-shadow: 1px 1px 10px var(--primary-light);
     margin-top: 24px;
+    @include mixins.desktop {
+      margin-top: 0;
+    }
   }
 }

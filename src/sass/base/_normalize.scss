@@ -45,6 +45,9 @@ h2 {
     font-size: 27px;
     color: var(--neutral-dark);
     font-weight: 600;
+    @include mixins.desktop {
+        font-size: 35px;
+    }
 }
 
 p {
@@ -52,4 +55,7 @@ p {
     font-weight: 400;
     color: var(--neutral-normal);
     line-height: 24px;
+    @include mixins.desktop {
+        font-size: 20.3px;
+    }
 }

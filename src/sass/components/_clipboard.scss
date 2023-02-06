@@ -1,5 +1,8 @@
+@use '../utilities/mixins' as mixins;
+
 .main__clipboard {
-  margin: 0 32px;  
+  margin: 0 32px;
+  @include mixins.caja-flex(column,initial,center);
 }
 
 .clipboard {

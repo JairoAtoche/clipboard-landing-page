@@ -2,35 +2,75 @@
 
 .main__track {
   margin: 0 32px;
+  @include mixins.desktop {
+    margin: 0;
+    align-self: flex-start;
+    width: 100%
+  }
 }
 
 .track {
   &__container {
     @include mixins.caja-flex(column,center,center);
+    @include mixins.desktop {      
+      @include mixins.caja-flex(row,start,start,110px);
+    }
   }
   &__h3:first-child {
     margin-top: 57px;
+    @include mixins.desktop {
+      margin-top: 153px;
+    }
   }
   &__h3 {
     margin-top: 51px;
+    font-size: 23px;
+    @include mixins.desktop {
+      margin-top: 62px;
+    }
   }
   &__h3 ~ &__p {
     margin-top: 14px;
+    @include mixins.desktop {
+      width: 340px;
+      font-size: 16.3px;
+      margin-top: 13px;
+    }
   }
   &__h2 {
     margin-top: 161px;
+    @include mixins.desktop {
+      margin-top: 153px;
+    }
   }
   &__p {
     margin-top: 21px;
+    @include mixins.desktop {
+      margin-top: 24px;
+      font-size: 18.3px;
+      width: 695px;
+    }
+
+  }
+  &__div {
+    @include mixins.caja-flex(column,center,center);
   }
 
   &__img {
     &-container {
       margin-top: 68px;
-      width: 311px;      
+      width: 311px;
+      @include mixins.desktop {
+        width: 752px;
+        margin-top: 85px;
+      } 
     }
     max-width: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  &__functionalities {
+    @include mixins.caja-flex(column,flex-start,flex-start);
   }
 }

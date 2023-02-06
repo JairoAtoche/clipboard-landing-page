@@ -1,9 +1,13 @@
 @use '../utilities/mixins' as mixins;
 
+.main__hero {
+  width: 100%;
+}
+
 .hero {
   margin: 0 32px;
   &__background {
-    padding: 0 32px;
+    padding: 0 31px;
     width: 100%;
     background-image: url(../images/bg-header-mobile.png);
     background-repeat: no-repeat;
@@ -11,11 +15,15 @@
     @include mixins.caja-flex(column,center,center);
     @include mixins.desktop {
       background-image: url(../images/bg-header-desktop.png);
+      padding: 0 350px;
     }
   }
   &__img {
     &-container {
       margin-top: 122px;
+      @include mixins.desktop {
+        margin-top: 131px;
+      }
     }
     max-width: 100%;
     object-fit: cover;
@@ -27,8 +35,15 @@
     font-size: 31px;
     font-weight: 600;
     color: var(--neutral-dark);
+    @include mixins.desktop {
+      margin-top: 57px;
+      font-size: 44.5px;
+    }
   }
   &__p {
     margin-top: 20px;
+    @include mixins.desktop {
+      margin-top: 18px;
+    }
   }
 }
