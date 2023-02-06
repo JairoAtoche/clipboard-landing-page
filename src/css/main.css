@@ -226,6 +226,7 @@ p {
     width: 340px;
     font-size: 16.3px;
     margin-top: 13px;
+    text-align: left;
   }
 }
 .track__h2 {
