@@ -482,7 +482,7 @@ p {
 }
 
 .main__available {
-  padding: 0 32px;
+  margin: 0 32px;
   margin-top: 172px;
   display: flex;
   flex-direction: column;
