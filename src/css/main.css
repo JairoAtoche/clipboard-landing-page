@@ -471,9 +471,21 @@ p {
   align-items: center;
   gap: initial;
 }
+@media screen and (min-width: 620px) {
+  .main__available {
+    margin-top: 159px;
+  }
+}
 
 .available__p {
   margin-top: 20px;
+}
+@media screen and (min-width: 620px) {
+  .available__p {
+    font-size: 18.3px;
+    padding: 0 340px;
+    margin-top: 23px;
+  }
 }
 
 .footer {
