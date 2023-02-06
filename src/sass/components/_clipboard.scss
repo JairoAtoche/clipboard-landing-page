@@ -17,8 +17,9 @@
     padding: 0 20px;
     @include mixins.desktop {
       margin-top: 24px;
-      padding: 0 300px;
+      padding: 0 350px;
       font-size: 18.3px;
+      line-height: 1.42;
     }
   }
   &__img {

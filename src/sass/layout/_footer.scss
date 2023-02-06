@@ -5,12 +5,19 @@
   background-color: #F5F6F8;
   width: 100%;
   @include mixins.caja-flex(column,initial,center);
-
+  @include mixins.desktop {
+    margin-top: 152px;
+    padding: 0 165px;
+    @include mixins.caja-flex(row,space-between,center);
+  }
   &__img {
     &-container {
       margin-top: 53px;
       width: 58px;
       object-fit: cover;
+      @include mixins.desktop {
+        margin-top: 0;
+      }
     }
     max-width: 100%;
     display: block;
@@ -19,9 +26,26 @@
     margin-top: 14px;
     list-style: none;
     text-align: center;
+    @include mixins.desktop {
+      margin-left: -200px;
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+    }
   }
   &__item {
     margin-top: 27px;
+    @include mixins.desktop {      
+      margin-top: 19px;
+      &:first-child, &:nth-child(3) {
+        margin-top: 0;
+      }
+      &:last-child {
+        align-self: flex-start;
+      }
+    }
     &__a {
       text-decoration: none;
       color: var(--neutral-dark);
@@ -29,14 +53,23 @@
       &:hover {
         color: var(--primary-strong);
       }
-    }
+    }    
+  }  
+}
+.footer__div {
+  @include mixins.desktop {
+    margin: 0 73px 0 97px;
   }
 }
 
 .network {
   margin-top: 51px;
   margin-bottom: 50px;
-  @include mixins.caja-flex(row,center,center, 40px);
+  @include mixins.caja-flex(row,center,center, 40px);  
+  @include mixins.desktop {
+    margin: 63px 0;
+    gap: 24px;  
+  }
   &__svg {
     max-width: 100%;
     object-fit: cover;

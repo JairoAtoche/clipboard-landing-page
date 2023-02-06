@@ -16,12 +16,16 @@
       object-fit: cover;
       &:first-child {
         width: 139px;
+        @include mixins.desktop {
+          width: 165px;
+        }
       }
       &:nth-child(2) {
         margin-top: 66px;
-        width: 117px;        
+        width: 117px;   
         @include mixins.desktop {    
           margin-top: 0;
+          width: 139px;
         }
       }
       &:nth-child(3) {
@@ -29,6 +33,7 @@
         width: 134px;
         @include mixins.desktop {    
           margin-top: 0;
+          width: 161px;
         }
       }
       &:nth-child(4) {
@@ -36,6 +41,7 @@
         width: 113px;
         @include mixins.desktop {    
           margin-top: 0;
+          width: 135px;
         }
       }
       &:last-child {
@@ -43,6 +49,7 @@
         width: 105px;
         @include mixins.desktop {    
           margin-top: 0;
+          width: 125px;
         }
       }
     }

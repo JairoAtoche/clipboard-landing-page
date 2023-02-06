@@ -36,6 +36,7 @@
       font-size: 16.3px;
       margin-top: 13px;
       text-align: left;
+      line-height: 1.54;
     }
   }
   &__h2 {
@@ -50,6 +51,7 @@
       margin-top: 24px;
       font-size: 18.3px;
       width: 695px;
+      line-height: 1.48;
     }
 
   }
@@ -73,6 +75,8 @@
   }
 
   &__functionalities {
-    @include mixins.caja-flex(column,flex-start,flex-start);
+    @include mixins.desktop {
+      @include mixins.caja-flex(column,flex-start,flex-start);
+    }    
   }
 }
