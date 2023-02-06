@@ -34,7 +34,7 @@ MOBILE
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JairoAtoche/clipboard-landing-page)
-- Live Site URL: [GitHub Pages](https://clipboard-landing-page-36059.web.app/)
+- Live Site URL: [Firebase Hosting](https://clipboard-landing-page-36059.web.app/)
 
 ## My process
 
@@ -45,6 +45,7 @@ MOBILE
 - Flexbox
 - Mobile-first workflow
 - Sass
+- Firebase Hosting
 
 ## Author
 
