@@ -63,6 +63,10 @@ p {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 .download {
   width: 312px;
   height: 56px;
